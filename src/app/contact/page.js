@@ -19,7 +19,7 @@ export default function ContactPage() {
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl">We're here to help with your disability claims journey</p>
+          <p className="text-xl">We&#39;re here to help with your disability claims journey</p>
         </div>
       </section>
 
@@ -110,7 +110,7 @@ export default function ContactPage() {
                 <h3 className="font-medium text-lg mb-2">How do I schedule a consultation?</h3>
                 <p className="text-gray-600">
                   You can schedule a consultation by filling out the contact form above, calling us directly at (800) 567-1911, 
-                  or sending an email to support@disabilityclaims.com. We'll respond within 24 hours to set up your free initial screening.
+                  or sending an email to support@disabilityclaims.com. We&#39;ll respond within 24 hours to set up your free initial screening.
                 </p>
               </div>
             </div>

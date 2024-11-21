@@ -50,7 +50,7 @@ export default function Testimonials() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-4">Client Success Stories</h1>
           <p className="text-xl max-w-3xl">
-            Real experiences from people we've helped navigate the disability claims process.
+            Real experiences from people we&#39;ve helped navigate the disability claims process.
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function Testimonials() {
                       <span className="text-sm text-primary">{testimonial.type}</span>
                     </div>
                   </div>
-                  <p className="text-gray-600 mb-4">"{testimonial.content}"</p>
+                  <p className="text-gray-600 mb-4">{testimonial.content}</p>
                   <div className="flex justify-between items-center">
                     <div className="flex">
                       {[...Array(testimonial.rating)].map((_, i) => (

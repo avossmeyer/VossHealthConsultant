@@ -122,7 +122,7 @@ export default function Services() {
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
                 <h3 className="text-xl font-semibold mb-4">Long Term Disability Support</h3>
-                <p className="mb-4">We help navigate private and employer-sponsored long-term disability claims, ensuring you understand your policy and receive the benefits you're entitled to.</p>
+                <p className="mb-4">We help navigate private and employer-sponsored long-term disability claims, ensuring you understand your policy and receive the benefits you&#39;re entitled to.</p>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />
@@ -152,7 +152,7 @@ export default function Services() {
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
                 <h3 className="text-xl font-semibold mb-4">SSDI Assistance</h3>
-                <p className="mb-4">SSDI is an insurance-based program under Title II. We provide comprehensive guidance to help you secure the benefits you've earned through your work history.</p>
+                <p className="mb-4">SSDI is an insurance-based program under Title II. We provide comprehensive guidance to help you secure the benefits you&#39;ve earned through your work history.</p>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />
@@ -182,7 +182,7 @@ export default function Services() {
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
                 <h3 className="text-xl font-semibold mb-4">Appeals Support</h3>
-                <p className="mb-4">Facing a denial doesn't mean the end. Our comprehensive appeals process helps you build a stronger case and navigate each level of appeal effectively.</p>
+                <p className="mb-4">Facing a denial doesn&#39;t mean the end. Our comprehensive appeals process helps you build a stronger case and navigate each level of appeal effectively.</p>
                 <ul className="space-y-2">
                   <li className="flex items-center">
                     <CheckCircle className="w-4 h-4 text-primary mr-2" />

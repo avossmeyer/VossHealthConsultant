@@ -62,7 +62,7 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-center mb-12">Real Clients, Real Results</h2>
           <div className="card bg-base-100 shadow-xl">
             <div className="card-body text-center">
-              <p className="text-lg italic">"After being denied SSDI twice, Arthur's team helped me appeal successfully. I now receive monthly benefits of $1,400."</p>
+              <p className="text-lg italic">&#34;After being denied SSDI twice, Arthur&#39;s team helped me appeal successfully. I now receive monthly benefits of $1,400.&#34;</p>
               <p className="font-semibold mt-4">– Sarah T.</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-semibold text-center mb-12">Expertise You Can Trust</h2>
           <p className="text-center text-lg mb-12">
-            With decades of experience and a deep understanding of SSI and SSDI processes, we've helped hundreds of clients secure the benefits they deserve.
+            With decades of experience and a deep understanding of SSI and SSDI processes, we&#39;ve helped hundreds of clients secure the benefits they deserve.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {['Personalized Guidance', 'Expert in Federal and State Disability Law', 'Proven Track Record of Success']
