@@ -35,6 +35,22 @@ export default function ContactForm() {
         />
       </div>
       <div>
+        <label htmlFor="reason" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
+          Reason for Contact
+        </label>
+        <select
+          id="reason"
+          className="mt-1 block w-full rounded-md bg-gray-50 border-2 border-gray-300 
+          shadow-sm focus:border-primary focus:ring-primary focus:ring-2 focus:bg-white
+          transition-colors px-4 py-2"
+        >
+          <option value="">Select a reason</option>
+          <option value="eligibility">Eligibility Questions</option>
+          <option value="appeals">Appeals Assistance</option>
+          <option value="general">General Inquiry</option>
+        </select>
+      </div>
+      <div>
         <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
           Message
         </label>

@@ -24,6 +24,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Content Section */}
+      {/* MUST FILL IN WITH REAL INFORMATION DOWN BELOW */}
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
@@ -78,9 +79,8 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-medium">Office Location</h3>
                         <p className="text-gray-600">
-                          123 Business Street<br />
-                          Suite 100<br />
-                          City, State 12345
+                          855 Sunset Ave<br />                    
+                          Los Angeles, California 90291
                         </p>
                       </div>
                     </div>
@@ -94,6 +94,24 @@ export default function ContactPage() {
               <div className="card-body">
                 <h2 className="card-title text-2xl mb-6">Send us a Message</h2>
                 <ContactForm />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
+          <div className="max-w-3xl mx-auto">
+            <div className="card bg-base-100 shadow-xl">
+              <div className="card-body">
+                <h3 className="font-medium text-lg mb-2">How do I schedule a consultation?</h3>
+                <p className="text-gray-600">
+                  You can schedule a consultation by filling out the contact form above, calling us directly at (800) 567-1911, 
+                  or sending an email to support@disabilityclaims.com. We'll respond within 24 hours to set up your free initial screening.
+                </p>
               </div>
             </div>
           </div>
