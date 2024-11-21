@@ -57,17 +57,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-semibold text-center mb-12">Real Clients, Real Results</h2>
           <div className="card bg-base-100 shadow-xl">
             <div className="card-body text-center">
-              <p className="text-lg italic">&#34;After being denied SSDI twice, Arthur&#39;s team helped me appeal successfully. I now receive monthly benefits of $1,400.&#34;</p>
+              <p className="text-lg italic">&#34;After being denied SSDI twice, Alex&#39;s team helped me appeal successfully. I now receive monthly benefits of $1,400.&#34;</p>
               <p className="font-semibold mt-4">– Sarah T.</p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
