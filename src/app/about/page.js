@@ -40,7 +40,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-semibold mb-6">Meet Ryan</h2>
               <p className="text-lg mb-6">
-                As the founder of LEV Health Consultants, Ryan brings a unique perspective shaped by personal experience. 
+                As the founder of Disability Claim Advocates, Ryan brings a unique perspective shaped by personal experience. 
                 Having navigated the complex disability claims system himself while managing chronic health conditions, Ryan understands 
                 firsthand the challenges that claimants face.
               </p>
