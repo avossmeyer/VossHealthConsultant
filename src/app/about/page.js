@@ -33,24 +33,24 @@ export default function About() {
             <div>
               <Image 
                 src="/Images/Team/alex-Ryan.jpg"
-                alt="Alex Ryan"
+                alt="Ryan"
                 className="rounded-lg shadow-xl"
               />
             </div>
             <div>
-              <h2 className="text-3xl font-semibold mb-6">Meet Alex Ryan</h2>
+              <h2 className="text-3xl font-semibold mb-6">Meet Ryan</h2>
               <p className="text-lg mb-6">
-                As the founder of Voss Health Consultant, Alex Ryan brings a unique perspective shaped by personal experience. 
-                Having navigated the complex disability claims system himself while managing chronic health conditions, Alex understands 
+                As the founder of LEV Health Consultants, Ryan brings a unique perspective shaped by personal experience. 
+                Having navigated the complex disability claims system himself while managing chronic health conditions, Ryan understands 
                 firsthand the challenges that claimants face.
               </p>
               <p className="text-lg mb-6">
-                Growing up in a family of healthcare professionals, Alex developed a deep passion for the medical and health industries 
+                Growing up in a family of healthcare professionals, Ryan developed a deep passion for the medical and health industries 
                 from an early age. This personal connection, combined with his experience working alongside leading disability consulting 
                 teams, has given him comprehensive insight into the intricate landscape of disability claims.
               </p>
               <p className="text-lg mb-6">
-                For over 4 years, Alex has been dedicated to understanding and managing medical and chronic conditions, building expertise 
+                For over 4 years, Ryan has been dedicated to understanding and managing medical and chronic conditions, building expertise 
                 in both the healthcare and administrative aspects of disability claims.
               </p>
               <div className="grid grid-cols-2 gap-4">
