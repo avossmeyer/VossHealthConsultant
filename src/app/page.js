@@ -1,5 +1,6 @@
 'use client'
 import { CheckCircle, AlertCircle } from 'lucide-react';
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -30,9 +31,12 @@ export default function Home() {
               <button className="btn btn-ghost bg-white text-primary hover:bg-blue-100">
                 Check Your Eligibility
               </button>
-              <button className="btn btn-outline text-white hover:bg-white hover:text-primary">
+              <Link 
+                href="/booking" 
+                className="btn btn-outline text-white hover:bg-white hover:text-primary"
+              >
                 Book a Free Consultation
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -93,9 +97,12 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-semibold mb-8">Ready to Take the Next Step?</h2>
-          <button className="btn btn-primary btn-lg">
+          <Link 
+            href="/booking" 
+            className="btn btn-primary btn-lg"
+          >
             Contact Us Today
-          </button>
+          </Link>
         </div>
       </section>
     </>
