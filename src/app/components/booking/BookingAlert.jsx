@@ -80,7 +80,7 @@ export default function BookingAlert({ calendlyEmail, hasUploadedFiles }) {
         {hasUploadedFiles && (
           <div className="mt-4 bg-green-50 rounded-lg p-3">
             <p className="text-sm text-green-700">
-              ✨ All set! We'll see you at your scheduled consultation.
+              ✨ All set! We&apos;ll see you at your scheduled consultation.
             </p>
           </div>
         )}
