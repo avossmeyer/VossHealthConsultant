@@ -1,7 +1,24 @@
 'use client'
 import { CheckCircle, DollarSign, Clock, Shield, AlertCircle } from 'lucide-react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Services() {
+  const processSteps = [
+    {
+      title: "Initial Consultation",
+      description: "We begin by thoroughly discussing your unique circumstances. During this session, we review your insurance policy, medical documentation, and goals to develop a clear understanding of your needs."
+    },
+    {
+      title: "Customized Strategy Development",
+      description: "Using insights from the consultation, we craft a tailored plan designed to maximize your chances of success. This includes a step-by-step roadmap for filing, responding to disputes, and, if necessary, appealing denials."
+    },
+    {
+      title: "Ongoing Support",
+      description: "Throughout the claims process, we remain by your side. From ensuring your submission is complete to addressing unexpected challenges, our team provides guidance and support at every turn."
+    }
+  ];
+
   return (
     <>
       {/* Hero Section */}
@@ -24,8 +41,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Pricing Comparison Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Pricing Section */}
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-semibold text-center mb-4">Transparent, Affordable Pricing</h2>
           <p className="text-lg text-center text-gray-600 mb-12">Compare our client-focused approach with traditional consulting services</p>
@@ -68,7 +85,14 @@ export default function Services() {
                     </div>
                   </div>
                 </div>
-                <button className="btn btn-primary w-full mt-8">Get Started Today</button>
+                <div className="card-actions">
+                  <Link 
+                    href="/booking" 
+                    className="btn btn-primary w-full mt-8 hover:scale-105 transition-transform duration-200"
+                  >
+                    Get Started Today
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -113,100 +137,165 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Services Breakdown */}
+      {/* New Compelling Image Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold text-primary">Expert Guidance When You Need It Most</h2>
+              <p className="text-lg text-gray-600">
+                Navigating disability claims shouldn&apos;t be a journey you take alone. Our experienced team provides the support, knowledge, and advocacy you need to secure the benefits you deserve.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
+                  <span className="text-gray-700">Personalized consultation and strategy</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
+                  <span className="text-gray-700">Comprehensive documentation support</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
+                  <span className="text-gray-700">Expert claim navigation assistance</span>
+                </div>
+              </div>
+              <Link 
+                href="/booking" 
+                className="btn btn-primary btn-lg inline-flex items-center gap-2 mt-4"
+              >
+                Schedule Your Free Consultation
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+            <div className="relative group">
+              <div className="relative h-[500px] overflow-hidden rounded-xl shadow-2xl">
+                <Image
+                  src="/Images/Stock/8.jpg"
+                  alt="Professional disability claim consultation"
+                  fill
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  quality={100}
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* New Detailed Services Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12">Our Services</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* LTD Claims Consulting */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-primary">Long-Term Disability (LTD) Claims Consulting</h3>
+              <p className="text-gray-600">
+                Filing a successful LTD claim requires an in-depth understanding of insurance policies,
+                medical documentation, and the tactics employed by insurers to minimize payouts.
+              </p>
+              <div className="grid gap-4">
+                {[
+                  {
+                    title: "Policy Analysis",
+                    desc: "We help you decode the complex language of your insurance policy, ensuring you fully understand your rights and obligations."
+                  },
+                  {
+                    title: "Claim Preparation",
+                    desc: "From gathering medical records to crafting a compelling narrative, we assist you in building a solid case."
+                  },
+                  {
+                    title: "Error Prevention",
+                    desc: "Small mistakes can lead to denials. We guide you in avoiding common pitfalls that jeopardize claims."
+                  },
+                  {
+                    title: "Dispute Resolution",
+                    desc: "If you're facing challenges such as surveillance or unfair claim denials, we provide strategies to counter these tactics effectively."
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <h4 className="font-semibold mb-2">{item.title}</h4>
+                    <p className="text-gray-600">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* SSDI Guidance */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-primary">Social Security Disability Insurance (SSDI) Guidance</h3>
+              <p className="text-gray-600">
+                While our expertise lies in LTD claims, we can also provide assistance and support in
+                Social Security Disability Insurance (SSDI) applications.
+              </p>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <span>Evaluating SSDI eligibility and requirements</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <span>Clarifying the differences between SSDI and LTD benefits to ensure proper coordination of claims</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <span>Simplifying the SSDI application process to increase your chances of approval</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Process Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Proven Process</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Long Term Disability Support */}
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h3 className="text-xl font-semibold mb-4">Long Term Disability Support</h3>
-                <p className="mb-4">We help navigate private and employer-sponsored long-term disability claims, ensuring you understand your policy and receive the benefits you&#39;re entitled to.</p>
-                <ul className="space-y-2">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Policy review and explanation</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Medical evidence compilation</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Claim filing assistance</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Surveillance awareness guidance</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Appeals support</span>
-                  </li>
-                </ul>
+            {processSteps.map((step, index) => (
+              <div key={index} className="relative">
+                <div className="bg-white p-8 rounded-lg shadow-lg h-full">
+                  <div className="absolute -top-4 left-8 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                    {index + 1}
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4 mt-2">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* SSDI Consulting */}
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h3 className="text-xl font-semibold mb-4">SSDI Assistance</h3>
-                <p className="mb-4">SSDI is an insurance-based program under Title II. We provide comprehensive guidance to help you secure the benefits you&#39;ve earned through your work history.</p>
-                <ul className="space-y-2">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Detailed medical evidence compilation</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Onset date documentation</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Employment history analysis</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Application preparation and review</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Ongoing claim status monitoring</span>
-                  </li>
-                </ul>
+      {/* Educational Resources Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">Educational Resources and Tools</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Templates and Checklists",
+                description: "Step-by-step guides to streamline the claims process."
+              },
+              {
+                title: "Communication Strategies",
+                description: "Tips for managing interactions with insurers to protect your rights."
+              },
+              {
+                title: "Appeal Assistance",
+                description: "Tools to build a compelling case if your claim is denied."
+              }
+            ].map((resource, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-semibold mb-4">{resource.title}</h3>
+                <p className="text-gray-600">{resource.description}</p>
               </div>
-            </div>
-
-            {/* Appeals Support */}
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h3 className="text-xl font-semibold mb-4">Appeals Support</h3>
-                <p className="mb-4">Facing a denial doesn&#39;t mean the end. Our comprehensive appeals process helps you build a stronger case and navigate each level of appeal effectively.</p>
-                <ul className="space-y-2">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Detailed denial analysis</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Additional medical evidence gathering</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Appeal documentation preparation</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Appeals Council representation</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
-                    <span>Federal Court appeal guidance</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -216,9 +305,12 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-semibold mb-6">Have Questions About Our Services?</h2>
           <p className="text-lg mb-8">Schedule your free initial screening today.</p>
-          <button className="btn btn-primary btn-lg">
+          <Link 
+            href="/booking" 
+            className="btn btn-primary btn-lg hover:scale-105 transition-transform duration-200"
+          >
             Schedule a Free Consultation
-          </button>
+          </Link>
         </div>
       </section>
     </>

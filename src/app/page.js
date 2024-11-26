@@ -1,6 +1,8 @@
 'use client'
 import { CheckCircle, AlertCircle } from 'lucide-react';
 import Link from 'next/link'
+import FeatureCards from './components/cards/FeatureCards';
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -28,9 +30,12 @@ export default function Home() {
               We guide you step-by-step through Social Security Disability Insurance (SSDI) and Long Term Disability (LTD) claims to ensure you receive the benefits you deserve.
             </p>
             <div className="space-x-4">
-              <button className="btn btn-ghost bg-white text-primary hover:bg-blue-100">
-                Check Your Eligibility
-              </button>
+              <Link 
+                href="/services" 
+                className="btn btn-ghost bg-white text-primary hover:bg-blue-100 transition-colors duration-200"
+              >
+                Our Services
+              </Link>
               <Link 
                 href="/booking" 
                 className="btn btn-outline text-white hover:bg-white hover:text-primary"
@@ -44,7 +49,7 @@ export default function Home() {
 
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12">Navigating Disability Claims Made Easy</h2>
+          <h2 className="text-3xl font-semibold text-center mb-12">Your Trusted Partner for Long-Term Disability Claims</h2>
           <div className="grid md:grid-cols-4 gap-8">
             {['Understand SSDI and LTD eligibility', 'Navigate employer and private disability policies', 
               'Handle appeals and denied claims effectively', 'Stay prepared for insurer surveillance']
@@ -61,35 +66,71 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12">Real Clients, Real Results</h2>
-          <div className="card bg-base-100 shadow-xl">
-            <div className="card-body text-center">
-              <p className="text-lg italic">&#34;After being denied SSDI twice, Alex&#39;s team helped me appeal successfully. I now receive monthly benefits of $1,400.&#34;</p>
-              <p className="font-semibold mt-4">– Sarah T.</p>
-            </div>
-          </div>
-        </div>
-      </section> */}
+      <FeatureCards />
 
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12">Expertise You Can Trust</h2>
-          <p className="text-center text-lg mb-12">
-            With decades of experience and a deep understanding of SSI and SSDI processes, we&#39;ve helped hundreds of clients secure the benefits they deserve.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {['Personalized Guidance', 'Expert in Federal and State Disability Law', 'Proven Track Record of Success']
-              .map((text, index) => (
-                <div key={index} className="card bg-base-100 shadow-xl">
-                  <div className="card-body text-center">
-                    <CheckCircle className="w-6 h-6 text-primary mx-auto mb-4" />
-                    <p className="font-semibold">{text}</p>
-                  </div>
-                </div>
-              ))
-            }
+      <section className="py-20 relative">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image Side */}
+            <div className="relative group">
+              <div className="relative h-[500px] w-full overflow-hidden rounded-xl">
+                <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors duration-300 z-10"></div>
+                <Image
+                  src="/Images/Stock/4.jpg"
+                  alt="Consultants reviewing documents"
+                  fill
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  quality={100}
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+
+            {/* Content Side */}
+            <div className="space-y-8">
+              <h2 className="text-3xl font-bold">Your Trusted Partner in LTD Claims</h2>
+              
+              <p className="text-lg text-gray-700">
+                With our expert guidance and compassionate approach, we help you understand your
+                rights, avoid common mistakes, and navigate every phase of the LTD claims process.
+                Whether you&apos;re filing a claim for the first time, appealing a denial, or facing disputes, we
+                stand ready to be your trusted partners in this journey.
+              </p>
+
+              <div className="grid gap-4">
+                {['Personalized Guidance', 'Expert in Federal and State Disability Law', 'Proven Track Record of Success']
+                  .map((text, index) => (
+                    <div 
+                      key={index} 
+                      className="flex items-center gap-3 p-4 bg-base-100 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                    >
+                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
+                      <p className="font-medium">{text}</p>
+                    </div>
+                  ))
+                }
+              </div>
+
+              <Link 
+                href="/booking" 
+                className="btn btn-primary inline-flex items-center gap-2"
+              >
+                Start Your Journey
+                <svg 
+                  className="w-4 h-4" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth="2" 
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
