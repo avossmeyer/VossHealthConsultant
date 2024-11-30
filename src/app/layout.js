@@ -11,6 +11,16 @@ const geistSans = localFont({
 export const metadata = {
   title: "Disability Claims Consulting",
   description: "Expert guidance for your disability claims journey",
+  icons: {
+    icon: [
+      {
+        url: '/Images/logo/svg-cropped.svg',
+        type: 'image/svg+xml',
+      }
+    ],
+    shortcut: '/Images/logo/svg-cropped.svg',
+    apple: '/Images/logo/svg-cropped.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
