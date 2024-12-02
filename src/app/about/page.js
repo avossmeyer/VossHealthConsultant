@@ -115,14 +115,12 @@ export default function About() {
               </p>
               <p className="text-lg mb-6">
                 In his early 20s, Ryan was diagnosed with multiple chronic illnesses that significantly
-                impacted his ability to work. Faced with the challenge of balancing his health with his
+                impacted his ability to work. Faced with the challenge of balancing his health alongside his
                 employment, Ryan found himself navigating the complex world of medical leave policies
-                and disability claims. The process was overwhelming and expensive, requiring him to
-                hire a consultant to secure the benefits he was entitled to.
+                and disability claims. The process was overwhelming and expensive.
               </p>
               <p className="text-lg mb-6">
-                This experience, combined with witnessing his family&apos;s struggles with cancer and mental
-                health issues, ignited Ryan&apos;s passion for advocacy. He established Disability Claim
+                This experience, combined with witnessing his family&apos;s health related struggles, ignited Ryan&apos;s passion for advocacy. He established Disability Claim
                 Advocates to ensure others wouldn&apos;t face the same barriers alone.
               </p>
             </div>
