@@ -34,41 +34,6 @@ export default function About() {
   const { about } = siteContent;
   const [openFAQ, setOpenFAQ] = useState(null);
 
-  const faqs = [
-    {
-      question: "What are your consultation fees?",
-      answer: "Our pricing is designed to be both affordable and transparent. Unlike many consultants, we avoid high upfront fees and hourly rates, ensuring our services are accessible to all."
-    },
-    {
-      question: "How long does the LTD claims process take?",
-      answer: "The timeline for LTD claims varies depending on factors such as the complexity of the case and the insurer's responsiveness. However, our expert guidance ensures that your claim is handled efficiently, minimizing unnecessary delays."
-    },
-    {
-      question: "Do you provide legal representation?",
-      answer: "No. While we do not provide legal representation, we focus on equipping you with the knowledge and tools needed to navigate the system confidently and independently."
-    },
-    {
-      question: "What conditions qualify for LTD benefits?",
-      answer: "LTD benefits typically cover chronic illnesses, severe injuries, and mental health conditions that prevent you from working. We'll evaluate your case to ensure your claim meets your policy's criteria."
-    },
-    {
-      question: "Can insurance companies investigate me?",
-      answer: "Yes. Insurers often monitor claimants to verify the legitimacy of their claims. We provide advice on how to protect your claim from unwarranted scrutiny."
-    },
-    {
-      question: "What happens if my claim is denied?",
-      answer: "Denial is not the end of the road. We'll work with you to identify the reasons for the refusal and develop a strong appeal."
-    },
-    {
-      question: "Do you assist with SSDI claims?",
-      answer: "Yes. In addition to LTD claims, we provide guidance on SSDI applications, mainly when pursued in tandem with LTD benefits."
-    },
-    {
-      question: "How do I book a consultation?",
-      answer: "Contact us via phone, email, or our online portal to schedule a personalized consultation. Our team will be happy to assist you."
-    }
-  ];
-
   return (
     <>
       {/* Hero Section */}
@@ -154,18 +119,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* FAQ Section - New */}
+      {/* FAQ Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold mb-4">{about.faqs.title}</h2>
             <p className="text-lg text-gray-600">
-              Find answers to common questions about our services and the LTD claims process
+              {about.faqs.subtitle}
             </p>
           </div>
           
           <div className="bg-white rounded-xl shadow-lg">
-            {faqs.map((faq, index) => (
+            {about.faqs.items.map((faq, index) => (
               <FAQItem
                 key={index}
                 question={faq.question}
@@ -178,13 +143,13 @@ export default function About() {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
-              Have general questions? We&apos;re here to help.
+              {about.faqs.cta.text}
             </p>
             <Link 
               href="/contact" 
               className="btn btn-outline btn-primary hover:scale-105 transition-transform duration-200"
             >
-              Contact Us
+              {about.faqs.cta.buttonText}
             </Link>
           </div>
         </div>
