@@ -2,8 +2,10 @@
 import { CheckCircle, DollarSign, Clock, Shield, AlertCircle } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import siteContent from '../content/siteContent.json'
 
 export default function Services() {
+  const { services } = siteContent;
   const processSteps = [
     {
       title: "Initial Consultation",
@@ -192,30 +194,12 @@ export default function Services() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* LTD Claims Consulting */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-primary">Long-Term Disability (LTD) Claims Consulting</h3>
+              <h3 className="text-2xl font-bold text-primary">{services.ltdConsulting.title}</h3>
               <p className="text-gray-600">
-                Filing a successful LTD claim requires an in-depth understanding of insurance policies,
-                medical documentation, and the tactics employed by insurers to minimize payouts.
+                {services.ltdConsulting.description}
               </p>
               <div className="grid gap-4">
-                {[
-                  {
-                    title: "Policy Analysis",
-                    desc: "We help you decode the complex language of your insurance policy, ensuring you fully understand your rights and obligations."
-                  },
-                  {
-                    title: "Claim Preparation",
-                    desc: "From gathering medical records to crafting a compelling narrative, we assist you in building a solid case."
-                  },
-                  {
-                    title: "Error Prevention",
-                    desc: "Small mistakes can lead to denials. We guide you in avoiding common pitfalls that jeopardize claims."
-                  },
-                  {
-                    title: "Dispute Resolution",
-                    desc: "If you're facing challenges such as surveillance or unfair claim denials, we provide strategies to counter these tactics effectively."
-                  }
-                ].map((item, index) => (
+                {services.ltdConsulting.items.map((item, index) => (
                   <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                     <h4 className="font-semibold mb-2">{item.title}</h4>
                     <p className="text-gray-600">{item.desc}</p>
@@ -226,25 +210,18 @@ export default function Services() {
 
             {/* SSDI Guidance */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-primary">Social Security Disability Insurance (SSDI) Guidance</h3>
+              <h3 className="text-2xl font-bold text-primary">{services.ssdiGuidance.title}</h3>
               <p className="text-gray-600">
-                While our expertise lies in LTD claims, we can also provide assistance and support in
-                Social Security Disability Insurance (SSDI) applications.
+                {services.ssdiGuidance.description}
               </p>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <span>Evaluating SSDI eligibility and requirements</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <span>Clarifying the differences between SSDI and LTD benefits to ensure proper coordination of claims</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <span>Simplifying the SSDI application process to increase your chances of approval</span>
-                  </li>
+                  {services.ssdiGuidance.bulletPoints.map((point, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

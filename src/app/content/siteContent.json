@@ -1,0 +1,74 @@
+{
+  "home": {
+    "hero": {
+      "title": "Simplifying Disability Claims. Maximizing Your Benefits.",
+      "description": "We guide you step-by-step through Social Security Disability Insurance (SSDI) and Long Term Disability (LTD) claims to ensure you receive the benefits you deserve.",
+      "buttons": {
+        "services": "Our Services",
+        "booking": "Book a Free Consultation"
+      }
+    },
+    "features": {
+      "title": "Your Trusted Partner for Long-Term Disability Claims",
+      "items": [
+        "Understand SSDI and LTD eligibility",
+        "Navigate employer and private disability policies",
+        "Handle appeals and denied claims effectively",
+        "Stay prepared for insurer surveillance"
+      ]
+    },
+    "consultation": {
+      "title": "Your Trusted Partner in LTD Claims",
+      "description": "Our team of specialists helps you understand your rights, avoid common mistakes, and navigate every phase of the LTD claims process. Whether you're filing a claim for the first time, appealing a denial, or facing disputes, we stand ready to be your trusted partners in this journey.",
+      "benefits": [
+        "Personalized Guidance",
+        "Expert in Federal and State Disability Law",
+        "Proven Track Record of Success"
+      ],
+      "ctaButton": "Start Your Journey"
+    },
+    "callToAction": {
+      "title": "Ready to Take the Next Step?",
+      "buttonText": "Contact Us Today"
+    }
+  },
+  "about": {
+    "title": "",
+    "mainContent": "",
+    "mission": "",
+    "values": []
+  },
+  "services": {
+    "ltdConsulting": {
+      "title": "Long-Term Disability (LTD) Claims Consulting",
+      "description": "Filing a successful LTD claim requires an in-depth understanding of insurance policies, medical documentation, and the tactics employed by insurers to minimize payouts.",
+      "items": [
+        {
+          "title": "Policy Analysis",
+          "desc": "We help you decode the complex language of your insurance policy, ensuring you fully understand your rights and obligations."
+        },
+        {
+          "title": "Claim Preparation",
+          "desc": "From gathering medical records to crafting a compelling narrative, we assist you in building a solid case."
+        },
+        {
+          "title": "Error Prevention",
+          "desc": "Small mistakes can lead to denials. We guide you in avoiding common pitfalls that jeopardize claims."
+        },
+        {
+          "title": "Dispute Resolution",
+          "desc": "If you're facing challenges such as surveillance or unfair claim denials, we provide strategies to counter these tactics effectively."
+        }
+      ]
+    },
+    "ssdiGuidance": {
+      "title": "Social Security Disability Insurance (SSDI) Guidance",
+      "description": "While our expertise lies in LTD claims, we can also provide assistance and support in Social Security Disability Insurance (SSDI) applications.",
+      "bulletPoints": [
+        "Evaluating SSDI eligibility and requirements",
+        "Clarifying the differences between SSDI and LTD benefits to ensure proper coordination of claims",
+        "Simplifying the SSDI application process to increase your chances of approval"
+      ]
+    }
+  }
+} 
