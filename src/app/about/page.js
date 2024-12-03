@@ -3,6 +3,7 @@ import { Award, Users, Clock, Briefcase, ChevronDown } from 'lucide-react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react'
+import siteContent from '../content/siteContent.json'
 
 function FAQItem({ question, answer, isOpen, onClick }) {
   return (
@@ -30,6 +31,7 @@ function FAQItem({ question, answer, isOpen, onClick }) {
 }
 
 export default function About() {
+  const { about } = siteContent;
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const faqs = [
@@ -69,12 +71,12 @@ export default function About() {
 
   return (
     <>
-      {/* Hero Section - Updated title */}
+      {/* Hero Section */}
       <section className="relative bg-primary text-white py-20">
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/Images/Stock/office.jpg')",
+            backgroundImage: `url('${about.hero.backgroundImage}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             mixBlendMode: 'multiply',
@@ -82,22 +84,22 @@ export default function About() {
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">Our Founder&apos;s Journey</h1>
+          <h1 className="text-4xl font-bold mb-4">{about.hero.title}</h1>
           <p className="text-xl max-w-3xl">
-            Advocacy Rooted in Personal Experience
+            {about.hero.subtitle}
           </p>
         </div>
       </section>
 
-      {/* Founder Section - Updated content */}
+      {/* Founder Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative group">
               <div className="relative h-[600px] w-full overflow-hidden rounded-lg shadow-xl">
                 <Image 
-                  src="/Images/Stock/Ryan1.jpg"
-                  alt="Ryan Beckmann, Founder of Disability Claim Advocates"
+                  src={about.founder.image.src}
+                  alt={about.founder.image.alt}
                   fill
                   className="object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                   quality={100}
@@ -107,24 +109,12 @@ export default function About() {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-semibold mb-6">Meet Ryan</h2>
-              <p className="text-lg mb-6">
-                Disability Claim Advocates was founded with a singular goal, to make the disability
-                claims process accessible, affordable, and compassionate for everyone. This mission
-                stems from the personal experiences of our founder, Ryan Beckmann.
-              </p>
-              <p className="text-lg mb-6">
-                In his early 20s, Ryan was diagnosed with multiple chronic illnesses that significantly
-                impacted his ability to work. Faced with the challenge of balancing his health with his
-                employment, Ryan found himself navigating the complex world of medical leave policies
-                and disability claims. The process was overwhelming and expensive, requiring him to
-                hire a consultant to secure the benefits he was entitled to.
-              </p>
-              <p className="text-lg mb-6">
-                This experience, combined with witnessing his family&apos;s struggles with cancer and mental
-                health issues, ignited Ryan&apos;s passion for advocacy. He established Disability Claim
-                Advocates to ensure others wouldn&apos;t face the same barriers alone.
-              </p>
+              <h2 className="text-3xl font-semibold mb-6">{about.founder.title}</h2>
+              {about.founder.content.map((paragraph, index) => (
+                <p key={index} className="text-lg mb-6">
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
         </div>
