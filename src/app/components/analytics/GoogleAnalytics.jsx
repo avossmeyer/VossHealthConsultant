@@ -4,9 +4,10 @@ import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
-export default function GoogleAnalytics({ GA_MEASUREMENT_ID }) {
+export default function GoogleAnalytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const GA_MEASUREMENT_ID = 'G-T8HHGDLKSC';
 
   useEffect(() => {
     if (pathname && window.gtag) {
@@ -14,7 +15,7 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }) {
         page_path: pathname + searchParams.toString(),
       });
     }
-  }, [pathname, searchParams, GA_MEASUREMENT_ID]);
+  }, [pathname, searchParams]);
 
   return (
     <>
@@ -30,9 +31,7 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', '${GA_MEASUREMENT_ID}');
           `,
         }}
       />

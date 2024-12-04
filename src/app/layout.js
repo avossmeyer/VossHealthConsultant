@@ -68,8 +68,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={`${geistSans.variable} antialiased bg-background`}>
-        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_ID} />
         <ClientLayout>
           {children}
         </ClientLayout>
