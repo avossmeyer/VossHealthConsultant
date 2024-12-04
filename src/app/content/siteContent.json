@@ -125,5 +125,139 @@
         "Simplifying the SSDI application process to increase your chances of approval"
       ]
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "introduction": {
+      "title": "Introduction",
+      "content": "At Disability Claims Consulting, we take your privacy seriously. This privacy policy explains how we collect, use, and protect your personal information when you use our disability consulting services."
+    },
+    "informationUse": {
+      "title": "How We Use Your Information",
+      "pretext": "We use your information solely for the purpose of:",
+      "items": [
+        "Providing disability claims consulting services",
+        "Communicating with you about your claim",
+        "Assisting with your disability benefits application",
+        "Managing and improving our services"
+      ]
+    },
+    "protection": {
+      "title": "Information Protection",
+      "pretext": "We implement appropriate security measures to protect your personal information, including:",
+      "items": [
+        "Secure data storage systems",
+        "Limited access to personal information by authorized personnel only",
+        "Confidentiality agreements with our employees",
+        "Regular security assessments and updates"
+      ]
+    },
+    "sharing": {
+      "title": "Information Sharing",
+      "pretext": "We do not sell, trade, or rent your personal information to third parties. Your information may only be shared with:",
+      "items": [
+        "Insurance companies (as required for your claim)",
+        "Healthcare providers (with your explicit consent)",
+        "Legal representatives (when necessary for your claim)",
+        "Government agencies (as required by law)"
+      ]
+    },
+    "rights": {
+      "title": "Your Rights",
+      "pretext": "You have the right to:",
+      "items": [
+        "Access your personal information",
+        "Request corrections to your information",
+        "Request deletion of your information (where applicable)",
+        "Withdraw consent for information usage",
+        "Receive a copy of your information"
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about our privacy policy or how we handle your information, please contact us at:",
+      "email": "disabilityclaimadvocatesmailer@gmail.com"
+    },
+    "updates": {
+      "title": "Updates to Privacy Policy",
+      "content": "We may update this privacy policy from time to time to reflect changes in our practices or for legal requirements. We will notify you of any material changes by posting the updated policy on our website."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "agreement": {
+      "title": "Agreement to Terms",
+      "content": "By engaging our services, you agree to these terms and conditions. Please read them carefully before proceeding with our disability claims consulting services."
+    },
+    "serviceDescription": {
+      "title": "Service Description",
+      "pretext": "We provide consulting services for disability claims, including but not limited to:",
+      "items": [
+        "Guidance on disability claim documentation",
+        "Assistance with application processes",
+        "Review of claim materials",
+        "Strategic advice for claim submission",
+        "Support during claim appeals"
+      ]
+    },
+    "paymentTerms": {
+      "title": "Payment Terms",
+      "pretext": "All payments for our services are non-refundable. By engaging our services, you acknowledge and agree to the following:",
+      "items": [
+        "Fees are due prior to service commencement",
+        "All payments are final and non-refundable",
+        "Service fees do not guarantee claim approval",
+        "Additional services may incur additional fees",
+        "Payment plans must be agreed upon in writing"
+      ]
+    },
+    "clientResponsibilities": {
+      "title": "Client Responsibilities",
+      "pretext": "As a client, you agree to:",
+      "items": [
+        "Provide accurate and truthful information at all times",
+        "Submit required documentation in a timely manner",
+        "Maintain open communication throughout the process",
+        "Disclose all relevant medical and employment information",
+        "Follow our professional guidance and recommendations"
+      ]
+    },
+    "confidentiality": {
+      "title": "Confidentiality",
+      "pretext": "We maintain strict confidentiality of all client information. Our privacy practices include:",
+      "items": [
+        "No sharing of client information with unauthorized third parties",
+        "Secure storage of all client documentation",
+        "Limited access to client files by authorized personnel only",
+        "Compliance with all applicable privacy laws and regulations",
+        "Confidential handling of all communication and records"
+      ]
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "pretext": "Our services are consultative in nature. We do not:",
+      "items": [
+        "Guarantee approval of disability claims",
+        "Provide legal representation or advice",
+        "Make medical diagnoses or recommendations",
+        "Handle direct communication with insurance companies on your behalf",
+        "Modify or falsify any documentation"
+      ]
+    },
+    "termination": {
+      "title": "Termination",
+      "pretext": "We reserve the right to terminate services if:",
+      "items": [
+        "False or misleading information is provided",
+        "Client fails to follow consultation guidance",
+        "Payment obligations are not met",
+        "Professional boundaries are not respected",
+        "Continuation of services would be unethical or illegal"
+      ]
+    },
+    "updates": {
+      "title": "Updates to Terms",
+      "content": "We reserve the right to modify these terms at any time. Continued use of our services following any changes constitutes acceptance of the modified terms."
+    }
   }
 } 
